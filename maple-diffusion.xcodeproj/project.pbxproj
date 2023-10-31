@@ -18,7 +18,7 @@
 		7263BFFA2AE30AD800BD23BE /* AppAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 7263BFF92AE30AD800BD23BE /* AppAuth */; };
 		7263BFFD2AE30B1400BD23BE /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 7263BFFC2AE30B1400BD23BE /* GoogleSignIn */; };
 		7263BFFF2AE30B1400BD23BE /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7263BFFE2AE30B1400BD23BE /* GoogleSignInSwift */; };
-		7263C0042AE30FD500BD23BE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7263C0032AE30FD500BD23BE /* GoogleService-Info.plist */; };
+		8824529E2AF149880090C648 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8824529D2AF149880090C648 /* GoogleService-Info.plist */; };
 		95F089D22ADDCCF500E60104 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 95F089D12ADDCCF500E60104 /* Alamofire */; };
 		95F089D52ADDCD0D00E60104 /* OpenAIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 95F089D42ADDCD0D00E60104 /* OpenAIKit */; };
 		95F089D82ADDCD3B00E60104 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 95F089D72ADDCD3B00E60104 /* SDWebImageSwiftUI */; };
@@ -36,7 +36,7 @@
 		7263BFEC2AE3086000BD23BE /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		7263BFEF2AE3089000BD23BE /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		7263C0022AE30E4200BD23BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		7263C0032AE30FD500BD23BE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8824529D2AF149880090C648 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		97B171AB28F23B7700B97242 /* maple-diffusion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "maple-diffusion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97B171AE28F23B7700B97242 /* maple_diffusionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = maple_diffusionApp.swift; sourceTree = "<group>"; };
 		97B171B028F23B7700B97242 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -93,6 +93,7 @@
 		97B171AD28F23B7700B97242 /* maple-diffusion */ = {
 			isa = PBXGroup;
 			children = (
+				8824529D2AF149880090C648 /* GoogleService-Info.plist */,
 				7263C0022AE30E4200BD23BE /* Info.plist */,
 				97B171AE28F23B7700B97242 /* maple_diffusionApp.swift */,
 				97B171B028F23B7700B97242 /* ContentView.swift */,
@@ -103,7 +104,6 @@
 				7263BFEE2AE3088100BD23BE /* ViewModel */,
 				97B171BF28F23C7D00B97242 /* bins */,
 				97B171B228F23B7800B97242 /* Assets.xcassets */,
-				7263C0032AE30FD500BD23BE /* GoogleService-Info.plist */,
 				97B171B428F23B7800B97242 /* maple_diffusion.entitlements */,
 				97B171B528F23B7800B97242 /* Preview Content */,
 			);
@@ -196,7 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				97B171C028F23C7D00B97242 /* bins in Resources */,
-				7263C0042AE30FD500BD23BE /* GoogleService-Info.plist in Resources */,
+				8824529E2AF149880090C648 /* GoogleService-Info.plist in Resources */,
 				97B171B728F23B7800B97242 /* Preview Assets.xcassets in Resources */,
 				97B171B328F23B7800B97242 /* Assets.xcassets in Resources */,
 			);
@@ -340,7 +340,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "maple-diffusion/maple_diffusion.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
@@ -369,7 +369,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.madebyollin.maple-diffusionLOVE";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = CR7;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = Prod;
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -385,11 +385,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "maple-diffusion/maple_diffusion.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"maple-diffusion/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = H62F46QL5V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "maple-diffusion/Info.plist";
@@ -412,6 +414,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.madebyollin.maple-diffusionLOVE";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = Prod;
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
