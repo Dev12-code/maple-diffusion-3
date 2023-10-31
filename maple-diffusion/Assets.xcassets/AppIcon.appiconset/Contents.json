@@ -1,0 +1,74 @@
+{
+  "images" : [
+    {
+      "filename" : "WhatsApp Image 2023-09-08 at 14.36.05.jpeg",
+      "idiom" : "universal",
+      "platform" : "ios",
+      "size" : "1024x1024"
+    },
+    {
+      "filename" : "WhatsApp Image 2023-09-08 at 14.36.05 (6).jpeg",
+      "idiom" : "mac",
+      "scale" : "1x",
+      "size" : "16x16"
+    },
+    {
+      "filename" : "WhatsApp Image 2023-09-08 at 14.36.05 (5) 2.jpeg",
+      "idiom" : "mac",
+      "scale" : "2x",
+      "size" : "16x16"
+    },
+    {
+      "filename" : "WhatsApp Image 2023-09-08 at 14.36.05 (5) 1.jpeg",
+      "idiom" : "mac",
+      "scale" : "1x",
+      "size" : "32x32"
+    },
+    {
+      "filename" : "WhatsApp Image 2023-09-08 at 14.36.05 (4).jpeg",
+      "idiom" : "mac",
+      "scale" : "2x",
+      "size" : "32x32"
+    },
+    {
+      "filename" : "WhatsApp Image 2023-09-08 at 14.36.05 (3).jpeg",
+      "idiom" : "mac",
+      "scale" : "1x",
+      "size" : "128x128"
+    },
+    {
+      "filename" : "WhatsApp Image 2023-09-08 at 14.36.05 (2) 2.jpeg",
+      "idiom" : "mac",
+      "scale" : "2x",
+      "size" : "128x128"
+    },
+    {
+      "filename" : "WhatsApp Image 2023-09-08 at 14.36.05 (2) 1.jpeg",
+      "idiom" : "mac",
+      "scale" : "1x",
+      "size" : "256x256"
+    },
+    {
+      "filename" : "WhatsApp Image 2023-09-08 at 14.36.05 (1).jpeg",
+      "idiom" : "mac",
+      "scale" : "2x",
+      "size" : "256x256"
+    },
+    {
+      "filename" : "WhatsApp Image 2023-09-08 at 14.36.05 (1) 1.jpeg",
+      "idiom" : "mac",
+      "scale" : "1x",
+      "size" : "512x512"
+    },
+    {
+      "filename" : "WhatsApp Image 2023-09-08 at 14.36.05 1.jpeg",
+      "idiom" : "mac",
+      "scale" : "2x",
+      "size" : "512x512"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
