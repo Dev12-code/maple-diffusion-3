@@ -24,7 +24,7 @@ class LoginViewModel: ObservableObject {
         UIApplication.shared.closeKeyboard()
         Task {
             do {
-                Auth.auth().settings?.isAppVerificationDisabledForTesting = true // Recuerda cambiar esto en producción
+                Auth.auth().settings?.isAppVerificationDisabledForTesting = false // Recuerda cambiar esto en producción
                 let code = try await PhoneAuthProvider.provider().verifyPhoneNumber("+\(mobileNo)", uiDelegate: nil)
                 await MainActor.run {
                     CLIENT_CODE = code
